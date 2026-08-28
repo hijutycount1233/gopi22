@@ -26,8 +26,8 @@ jobs:
 
       - name: Download and Extract Bore
         run: |
-          Invoke-WebRequest -Uri "https://github.com" -OutFile bore.zip
-          Expand-Archive bore.zip -DestinationPath bore -Force
+          Invoke-WebRequest -Uri "https://github.com/ekzhang/bore/releases/download/v0.5.1/bore-v0.5.1-x86_64-pc-windows-msvc.zip" -OutFile bore.zip
+          Expand-Archive bore.zip -DestinationPath bore
 
       - name: Enable RDP + Create Admin User
         run: |
